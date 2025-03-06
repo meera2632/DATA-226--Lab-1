@@ -1,0 +1,11 @@
+#Displaying the values of historical data
+SELECT * FROM DEV.RAW.STOCK_PRICE_PRED
+ORDER BY DATE DESC;
+
+#Displaying the values of predicted data
+SELECT * FROM DEV.ADHOC.MARKET_DATA_FORECAST
+ORDER BY TS DESC;
+
+#Displaying the union table
+SELECT * FROM DEV.ANALYTICS.MARKET_DATA
+ORDER BY DATE DESC; 
